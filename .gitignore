@@ -1,0 +1,10 @@
+# Runtime data - visitor-submitted leads and logs must never be committed
+data/leads.jsonl
+data/notifications.log
+
+# Local-only configuration (admin credentials, etc.)
+config.local.php
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db

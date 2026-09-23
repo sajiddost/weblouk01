@@ -1,0 +1,46 @@
+# =========================================================
+# Weblo: clean URLs, SEO feeds, security basics
+# =========================================================
+
+Options -MultiViews
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	# --- 1) 301 old *.php URLs to clean, extensionless URLs ---
+	RewriteCond %{THE_REQUEST} \s/+([^?\s]+/)index\.php[?\s] [NC]
+	RewriteRule ^ /%1 [R=301,L]
+
+	RewriteCond %{THE_REQUEST} \s/+([^?\s]+)\.php[?\s] [NC]
+	RewriteRule ^ /%1 [R=301,L]
+
+	# --- 2) Route SEO feed clean URLs to their generators ---
+	RewriteRule ^robots\.txt$ robots.php [L]
+	RewriteRule ^llms\.txt$ llms.php [L]
+	RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+	# --- 3) Serve existing files and directories as-is ---
+	RewriteCond %{REQUEST_FILENAME} -f [OR]
+	RewriteCond %{REQUEST_FILENAME} -d
+	RewriteRule ^ - [L]
+
+	# --- 4) Map any other clean URL to its .php file ---
+	RewriteCond %{REQUEST_FILENAME}.php -f
+	RewriteRule ^(.+?)/?$ $1.php [L]
+
+	# --- 5) Map service-page clean URLs into /Pages ---
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^([a-zA-Z0-9\-]+)/?$ Pages/$1.php [L]
+</IfModule>
+
+# --- Prevent direct access to runtime data files ---
+<FilesMatch "\.(jsonl|log)$">
+	Require all denied
+</FilesMatch>
+
+# --- Basic protection: block .git exposure ---
+<IfModule mod_rewrite.c>
+	RewriteRule ^\.git/ - [F,L]
+</IfModule>

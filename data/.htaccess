@@ -1,0 +1,4 @@
+# Block direct web access to the data files (JSONL leads, blog JSON).
+<FilesMatch "\.(jsonl|json|log)$">
+    Require all denied
+</FilesMatch>
