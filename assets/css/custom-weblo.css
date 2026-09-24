@@ -388,7 +388,7 @@ img { max-width: 100%; height: auto; }
 .hs-breadcrumb a { color: var(--subtitle); }
 .hs-breadcrumb a:hover { color: var(--black-100); }
 .hs-breadcrumb i { color: var(--primary-dark); font-size: 15px; }
-.hs-breadcrumb span { color: var(--black-100); padding: 6px 14px; background: #fff; border: 1px solid var(--line); border-radius: 999px; }
+.hs-breadcrumb span { color: var(--black-100); }
 
 /* =========================================================
    PAGE HERO (inner pages) + AUDIT HERO

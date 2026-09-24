@@ -171,6 +171,41 @@ require __DIR__ . '/includes/header.php';
 	</div>
 </section>
 
+<!-- ========== MEET THE FOUNDER ========== -->
+<section class="section pt-0">
+	<div class="container">
+		<div class="sec-header center fadeInUp" data-delay="0.1">
+			<h3 class="pill"><i class="ri-user-star-line"></i>Meet the Founder</h3>
+			<h2 class="sec-title">The Person Behind Weblo</h2>
+		</div>
+		<div class="about-founder-card fadeInUp" data-delay="0.1">
+			<div class="row no-gutters">
+				<div class="col-lg-5">
+					<div class="founder-photo">
+						<img src="<?= site_url('assets/img/founder.jpg') ?>" alt="Azhar Ali — CEO and Founder of Weblo" loading="lazy">
+						<div class="founder-badge"><i class="ri-award-line"></i>Azhar Ali &middot; CEO &amp; Founder</div>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="founder-info">
+						<h3 class="pill"><i class="ri-user-heart-line"></i>The Founder</h3>
+						<h2>Azhar Ali</h2>
+						<p class="founder-origin"><i class="ri-vip-crown-line"></i>CEO &amp; Founder, Weblo</p>
+						<p class="founder-snapshot">Azhar Ali founded Weblo in 2017 with the belief that a website is only as good as the growth it drives. Combining hands-on web development with white-hat SEO, he built the agency around one idea &mdash; design, build, and rank as a single process.</p>
+						<div class="founder-social">
+							<span>Connect:</span>
+							<a href="https://www.linkedin.com/company/webloltd" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+							<a href="https://x.com/webloltd" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="ri-twitter-x-fill"></i></a>
+							<a href="https://www.facebook.com/webloltd" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ========== END MEET THE FOUNDER ========== -->
+
 <!-- ========== STORY CHAPTERS ========== -->
 <section class="section pt-0">
 	<div class="container">
