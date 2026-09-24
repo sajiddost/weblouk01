@@ -132,45 +132,6 @@ require __DIR__ . '/includes/header.php';
 </section>
 <!-- ========== END PAGE HERO ========== -->
 
-<!-- ========== AGENCY CARD ========== -->
-<section class="section pt-0">
-	<div class="container">
-		<div class="about-founder-card fadeInUp" data-delay="0.1">
-			<div class="row no-gutters">
-				<div class="col-lg-5">
-					<div class="founder-photo">
-						<img src="<?= site_url('assets/img/blog/author.jpg') ?>" alt="<?= e(SITE_NAME) ?> — digital agency from Kasur, Pakistan" loading="lazy">
-						<div class="founder-badge"><i class="ri-award-line"></i>Est. <?= e($agency['stats'][0]['num']) ?> &middot; Kasur, Pakistan</div>
-					</div>
-				</div>
-				<div class="col-lg-7">
-					<div class="founder-info">
-						<h3 class="pill"><i class="ri-team-line"></i>The Agency</h3>
-						<h2><?= e($agency['name']) ?></h2>
-						<p class="founder-origin"><i class="ri-map-pin-2-line"></i><?= e($agency['origin']) ?></p>
-						<p class="founder-snapshot"><?= e($agency['snapshot']) ?></p>
-						<div class="founder-stats">
-							<?php foreach ($agency['stats'] as $s): ?>
-							<div class="founder-stat">
-								<span><?= $s['num'] ?></span>
-								<small><?= $s['label'] ?></small>
-							</div>
-							<?php endforeach; ?>
-						</div>
-						<div class="founder-social">
-							<span>Follow us:</span>
-							<a href="https://www.linkedin.com/company/webloltd" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
-							<a href="https://x.com/webloltd" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="ri-twitter-x-fill"></i></a>
-							<a href="https://www.facebook.com/webloltd" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-							<a href="https://www.instagram.com/webloltd" target="_blank" rel="noopener" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
 <!-- ========== MEET THE FOUNDER ========== -->
 <section class="section pt-0">
 	<div class="container">
