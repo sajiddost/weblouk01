@@ -47,24 +47,12 @@ if (empty($GLOBALS['SERVICES'])) {
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+					<div class="col-lg-6 col-md-6 col-sm-12 mb-4">
 						<h4 class="footer-heading">Services</h4>
-						<ul class="footer-links">
+						<ul class="footer-links footer-links-2col">
 							<?php foreach ($SERVICES as $svc): ?>
 							<li><a href="<?= site_url($svc['slug']) ?>"><i class="ri-arrow-right-s-line"></i><?= e($svc['name']) ?></a></li>
 							<?php endforeach; ?>
-						</ul>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-						<h4 class="footer-heading">Quick Links</h4>
-						<ul class="footer-links">
-							<li><a href="<?= site_url('') ?>#home"><i class="ri-arrow-right-s-line"></i>Home</a></li>
-							<li><a href="<?= site_url('') ?>#how"><i class="ri-arrow-right-s-line"></i>How We Work</a></li>
-							<li><a href="<?= site_url('about') ?>"><i class="ri-arrow-right-s-line"></i>About</a></li>
-							<li><a href="<?= site_url('blog') ?>"><i class="ri-arrow-right-s-line"></i>Blog &amp; Guides</a></li>
-							<li><a href="<?= site_url('audit') ?>"><i class="ri-arrow-right-s-line"></i>Free SEO Audit</a></li>
-							<li><a href="<?= site_url('') ?>#faqs"><i class="ri-arrow-right-s-line"></i>FAQs</a></li>
-							<li><a href="<?= site_url('contact') ?>"><i class="ri-arrow-right-s-line"></i>Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
